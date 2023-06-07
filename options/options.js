@@ -1,7 +1,8 @@
 export const globalOptions = {
-  name: "dallas-mavs-41355",
-  url: "https://dallas-mavs-41355.botics.co",
-  api: "https://dallas-mavs-41355.botics.co/api/v1"
+  "name": "dallas-mavs-41355",
+  "url": "https://dallas-mavs-41355.botics.co",
+  "api": "https://dallas-mavs-41355.botics.co/api/v1",
+  "initialRoute": "Untitled1"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
