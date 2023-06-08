@@ -1,3 +1,4 @@
+import { Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
@@ -19,7 +20,9 @@ const Untitled2 = () => {
         }}>
             <View style={styles.yuHNDoKc}></View>
           </Pressable>
-        </ImageBackground>
+        <Pressable onPress={() => {
+          navigation.navigate("Untitled3");
+        }}><View style={styles.pSukEnZR}><Text style={styles.GMPwVdVq}>{"Lowest Price"}</Text></View></Pressable></ImageBackground>
       </ScrollView>
     </SafeAreaView>;
 };
@@ -43,6 +46,28 @@ const styles = StyleSheet.create({
     top: 479,
     borderColor: "#f6fa1f",
     opacity: 0
+  },
+  pSukEnZR: {
+    height: 39,
+    width: 157,
+    backgroundColor: "#023069",
+    borderRadius: 7,
+    color: "#777777",
+    position: "absolute",
+    left: 11,
+    top: 428
+  },
+  GMPwVdVq: {
+    width: 88,
+    height: 19,
+    lineHeight: 14,
+    fontSize: 13,
+    borderRadius: 0,
+    fontFamily: "Open Sans",
+    color: "#FFF",
+    position: "absolute",
+    left: 34,
+    top: 11
   }
 });
 export default Untitled2;
