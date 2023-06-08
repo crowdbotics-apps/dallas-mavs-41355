@@ -13,7 +13,7 @@ const Untitled1 = () => {
       position: "relative",
       flex: 1
     }}>
-        <ImageBackground style={styles.VQBwItbN} source={require("./Screenshot 2023-06-07 at 6.25.34 PM.png")} resizeMode="cover">
+        <ImageBackground style={styles.VQBwItbN} source={require("./untitled1.png")} resizeMode="cover">
           <Pressable onPress={() => {
           navigation.navigate("Untitled2");
         }}>

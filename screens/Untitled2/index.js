@@ -7,20 +7,26 @@ import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled2 = () => {
   const navigation = useNavigation();
   return <SafeAreaView style={styles.safeArea}>
-        <ScrollView contentContainerStyle={{
-      backgroundColor: '#f0f0f1',
+      <ScrollView contentContainerStyle={{
+      backgroundColor: "#f0f0f1",
       padding: 10,
-      position: 'relative',
+      position: "relative",
       flex: 1
-    }}><ImageBackground style={styles.HgcDALGJ} source={require("./Screenshot 2023-06-07 at 6.29.04 PM.png")} resizeMode="cover"><Pressable onPress={() => {
+    }}>
+        <ImageBackground style={styles.HgcDALGJ} source={require("./untitled2.png")} resizeMode="cover">
+          <Pressable onPress={() => {
           navigation.navigate("Untitled3");
-        }}><View style={styles.yuHNDoKc}></View></Pressable></ImageBackground></ScrollView>
+        }}>
+            <View style={styles.yuHNDoKc}></View>
+          </Pressable>
+        </ImageBackground>
+      </ScrollView>
     </SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
   safeArea: {
-    height: '100%'
+    height: "100%"
   },
   HgcDALGJ: {
     width: "100%",
